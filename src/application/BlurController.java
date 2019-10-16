@@ -10,6 +10,12 @@ public class BlurController {
 	private Pane pane;
 	
 	@FXML
+    public void initialize() {           
+             pane.setEffect(new GaussianBlur(5));
+//             mypane.setEffect(new GaussianBlur(10));
+    }
+	
+	@FXML
     public void setblur() {           
              pane.setEffect(new GaussianBlur(5));
 //             mypane.setEffect(new GaussianBlur(10));
